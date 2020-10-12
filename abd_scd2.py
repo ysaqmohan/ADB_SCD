@@ -18,10 +18,10 @@ df_blob = spark.read.csv('dbfs:/mnt/sampleDirBlob/sampledir/IATAConversion.txt',
   withColumnRenamed("NumberCode","blobNumberCode")
 
 #Synapse connection jdbc setting  
-jdbcHostname = "dialmcsqlserversbx01.database.windows.net"
-jdbcDatabase = "dial-mc-sqlpool-sbx-01"
-userName = 'dialmcadmin'
-password = '@RonMeulenbroek'
+jdbcHostname = "hostnameofadb.database.windows.net"
+jdbcDatabase = "jdbc-db-name"
+userName = 'username'
+password = 'password'
 jdbcPort = 1433
 jdbcUrl = "jdbc:sqlserver://{0}:{1};database={2};user={3};password={4}".format(jdbcHostname, jdbcPort, jdbcDatabase, userName, password)
 
